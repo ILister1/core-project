@@ -3,7 +3,7 @@ import random
     
 app = Flask(__name__)
 
-@app.route('/theme', methods=['GET'])
+@app.route('/theme', methods=['GET', 'POST'])
 def theme():
 
     themes = ["Fortune found in", "Fears faced in", "Chance encounter in"]
