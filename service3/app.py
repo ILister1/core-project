@@ -3,7 +3,7 @@ import random
     
 app = Flask(__name__)
 
-@app.route('/setting', methods=['GET'])
+@app.route('/setting', methods=['GET', 'POST'])
 def setting():
 
     settings = ["a mysterious cavern", "an intimidating room", "a dreamlike headspace"]
