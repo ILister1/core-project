@@ -9,7 +9,7 @@ class TestBase(TestCase):
         return app
 
 class TestResponse(TestBase):
-    def test_story_on_page(self):
+    def test_scene_on_page(self):
         with patch("requests.get") as g:
             with patch("requests.post") as p:
                 g.return_value.text = "Fortune found in"
