@@ -16,7 +16,7 @@ class TestApp(TestBase):
         url_for("scene"),
         data='Fortune found in a mysterious cavern'
         )
-        self.assertIn(b"test1", response.data)
+        self.assertIn(b"found", response.data)
 
     def test_scene_two(self):
         response = self.client.post(
@@ -30,35 +30,35 @@ class TestApp(TestBase):
         url_for("scene"),
         data='Fortune found in a dreamlike headspace'
         )
-        self.assertIn(b"test3", response.data)
+        self.assertIn(b"pass", response.data)
 
     def test_scene_four(self):
         response = self.client.post(
         url_for("scene"),
         data='Fears faced in a mysterious cavern'
         )
-        self.assertIn(b"test4", response.data)
+        self.assertIn(b"spiders.", response.data)
 
     def test_scene_five(self):
         response = self.client.post(
         url_for("scene"),
         data='Fears faced in an intimidating room'
         )
-        self.assertIn(b"test5", response.data)
+        self.assertIn(b"leaving", response.data)
 
     def test_scene_six(self):
         response = self.client.post(
         url_for("scene"),
         data='Fears faced in a dreamlike headspace'
         )
-        self.assertIn(b"test6", response.data)
+        self.assertIn(b"pass", response.data)
 
     def test_scene_seven(self):
         response = self.client.post(
         url_for("scene"),
         data='Chance encounter in a mysterious cavern'
         )
-        self.assertIn(b"test7", response.data)
+        self.assertIn(b"salt", response.data)
 
 
     def test_scene_eight(self):
@@ -66,7 +66,7 @@ class TestApp(TestBase):
         url_for("scene"),
         data='Chance encounter in an intimidating room'
         )
-        self.assertIn(b"test8", response.data)
+        self.assertIn(b"exculpated", response.data)
 
 
     def test_scene_nine(self):
@@ -74,4 +74,4 @@ class TestApp(TestBase):
         url_for("scene"),
         data='Chance encounter in a dreamlike headspace'
         )
-        self.assertIn(b"test9", response.data)
+        self.assertIn(b"luckiest", response.data)
