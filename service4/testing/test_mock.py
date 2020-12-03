@@ -23,14 +23,14 @@ class TestApp(TestBase):
         url_for("scene"),
         data='Fortune found in an intimidating room'
         )
-        self.assertIn(b"test2", response.data)
+        self.assertIn(b"surprising", response.data)
 
     def test_scene_three(self):
         response = self.client.post(
         url_for("scene"),
         data='Fortune found in a dreamlike headspace'
         )
-        self.assertIn(b"pass", response.data)
+        self.assertIn(b"luck", response.data)
 
     def test_scene_four(self):
         response = self.client.post(
