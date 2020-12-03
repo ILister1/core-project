@@ -8,7 +8,7 @@ from application.models import Stories
 
 class TestBase(TestCase):
     def create_app(self):
-       app.config.update(SQLALCHEMY_DATABASE_URI = 'sqlite:///data.db'
+       app.config.update(SQLALCHEMY_DATABASE_URI = 'sqlite:///data.db',
                 SECRET_KEY = 'test_secret_key',
                 DEBUG=True
                 )
