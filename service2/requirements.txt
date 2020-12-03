@@ -3,4 +3,3 @@ flask-testing
 flask_sqlalchemy
 requests
 gunicorn
-pymysql
