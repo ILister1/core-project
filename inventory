@@ -4,6 +4,7 @@ swarm-manager
 
 [workers]
 swarm-worker
+swarm-worker1
 
 
 [manager:vars]
