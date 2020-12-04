@@ -8,8 +8,6 @@ sudo docker stack deploy --compose-file docker-compose.yaml core-project
 
 EOF
 
-logout
-
 ssh nginx-lb << EOF
 
 sudo docker stop nginx
