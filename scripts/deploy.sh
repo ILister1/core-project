@@ -12,6 +12,6 @@ ssh nginx-lb << EOF
 
 sudo docker stop nginx
 sudo docker rm nginx
-. load_balancer.sh
+. core-project/scripts/load_balancer.sh
 
 EOF
