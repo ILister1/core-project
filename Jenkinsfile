@@ -2,6 +2,12 @@ pipeline {
     agent any
 
     stages {
+        stage('Ansible') {
+            steps {
+                echo 'Running Playbook..'
+                sh ". ./scripts/run_playbook.sh"
+            }
+        }
         stage('Test') {
             steps {
                 echo 'Testing..'
