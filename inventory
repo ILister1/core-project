@@ -5,12 +5,13 @@ swarm-manager
 [workers]
 swarm-worker
 
+
 [manager:vars]
 ansible_user=user 
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 ansible_python_interpreter=/usr/bin/python3
 
-[worker:vars]
+[workers:vars]
 ansible_user=user 
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 ansible_python_interpreter=/usr/bin/python3
