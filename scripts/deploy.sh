@@ -10,8 +10,11 @@ EOF
 
 ssh nginx-lb << EOF
 
+cd core-project
+git pull
 sudo docker stop nginx
 sudo docker rm nginx
-. core-project/scripts/load_balancer.sh
+sudo docker rmi nginx:alpine
+. scripts/load_balancer.sh
 
 EOF
