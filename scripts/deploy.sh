@@ -17,4 +17,4 @@ sudo docker rm nginx
 sudo docker rmi nginx:alpine
 . scripts/load_balancer.sh
 
-EOF
+#EOF
