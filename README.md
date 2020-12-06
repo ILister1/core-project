@@ -177,6 +177,11 @@ as it is architecturally different to the other three more simple services. I ha
 
 ## Branching
 
+A second implementation on services 2, 3 and 4 has been pushed to development branch dev-branch (which doubles as a release pipe in the instance of this project. This branch is ahead of the master commit, and so needs a pull request created for it, and subsequently that pull request can be merged. As I have commented out the switched code in the development branch, any merge conflicts should be minimal, and thus easy to resolve.
+Here is my (very simple) feature-branch model:
+
+![feature][feature]
+
 
 ## Authors
 Isaac Lister
@@ -199,4 +204,5 @@ Thanks to Ben and all at QA for helping me get through this project.
 [testing2]: https://i.imgur.com/znOw4qo.png
 [testing3]: https://i.imgur.com/KN3Rmlq.png
 [testing4]: https://i.imgur.com/IqIvbzl.png
+[feature]: https://i.imgur.com/pUhStKI.png
 
