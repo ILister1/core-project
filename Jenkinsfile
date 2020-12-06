@@ -8,6 +8,7 @@ pipeline {
                 sh ". ./scripts/run_playbook.sh"
             }
         }
+
         stage('Build') {
             steps {
                 echo 'Building..'

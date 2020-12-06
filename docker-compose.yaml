@@ -2,8 +2,8 @@ version: "3.7"
 services:
   service1:
     environment:
-      DATABASE_URI: DATABASE_URI
-      SECRET_KEY: SECRET_KEY
+      DATABASE_URI: mysql+pymysql://root:]ollyPurple55@35.246.105.137/story_db
+      SECRET_KEY: hguyhfhdfyuguygu
     image: isaaclister/core-project1
     build: ./service1
     ports:
