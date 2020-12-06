@@ -93,11 +93,15 @@ Here is my CI Pipeline for this project:
 
 ![cipipe][cipipe]
 
-
+The only part of my pipeline that has not been explained is the Artifact Repository. For this I have chosen to use Dockerhub. Although we have been taught Nexus, Dockerhub uses a familiar collaboration model to GitHub, and as I am obviously used to GitHub, the method of pushing and pulling images from a DockerHub image repository makes more sense. The Docker Hub registry is less consistent than Nexus, but it is sufficient for this project.
 
 ## Back End
 
 ## Front End
+
+Here is a front-end view of my application. It is a simple pythonic HTML based web application, which generates new data every time the web page is refreshed and another HTTP request is made. As the focus of this project is the deployment side, the application side is simple, and so is its front-end GUI:
+
+![frontend][frontend]
 
 ## Deployment Log
 
@@ -160,3 +164,4 @@ Isaac Lister
 [initial]: https://i.imgur.com/AUspyjS.png
 [final]: https://i.imgur.com/DI3MXDv.png
 [cipipe]: https://i.imgur.com/Tt95F2f.png
+[frontend]: https://i.imgur.com/yMYJ2f2.png
