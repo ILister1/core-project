@@ -4,8 +4,8 @@
 
 ## Resources
 
-Website: http://35.246.80.16 (subject to GCP)<space><space>
-Trello: https://trello.com/b/5ElPMT3w/qa-practical-project <space><space>
+Website: http://35.246.80.16 (subject to GCP)<space><space> \
+Trello: https://trello.com/b/5ElPMT3w/qa-practical-project <space><space> \
 Risk Assessment: https://docs.google.com/spreadsheets/d/1kQLrGaM1gW0HIWIjLm2u13QtCvqEP9KuL1jlGq1TjD0/edit?usp=sharing
 
 ## Contents
