@@ -161,15 +161,31 @@ The application sometimes goes down briefly during a rolling update. Or, at leas
 Obscure URI in docker-compose.yaml, make application secure  \
 Increase number of replicas such that the application always stays live.  \
 Implement login functionality and the capacity to save stories to the database exclusive to a user account.  \
-Implement a form such that the user can suggest themes and settings which can be computationally processed into stories.  \
+Implement a form such that the user can suggest themes and settings which can be computationally processed into stories.
 
 ## Unit Testing
+
+I was able to successfully unit test my whole application. Coverage persists to over 90% in each service. Service 1 has a slightly different test structure:
+
+![testing1][testing1]
+
+as it is architecturally different to the other three more simple services. I have tested and asserted that the expected themes and settings are posted in services 2 and 3, that the HTTP requests from service 1 are successfully made, and that service 4 can return a json dictionary of the combined theme and setting of a 'story'. It is evidenced that all areas of the application are tested. 100% coverage would have been achieved but for the app.run line of each app.py- in the case of service 1, we wouldn't test app.py at all because it is just the line that runs the app, and although it is included within the monolithic services 2, 3 and 4, it also cannot be tested as it is not a functional part of the application. Therefore, I technically have 100% coverage.
+
+![testing2][testing2]
+![testing3][testing3]
+![testing4][testing4]
 
 ## Branching
 
 
 ## Authors
 Isaac Lister
+
+## Versioning
+v1.0
+
+## Acknowledgements
+Thanks to Ben and all at QA for helping me get through this project.
 
 [trello]: https://i.imgur.com/sSPOug4.png
 [erd]: https://i.imgur.com/Jo2H4Qy.png
@@ -179,3 +195,8 @@ Isaac Lister
 [cipipe]: https://i.imgur.com/Tt95F2f.png
 [frontend]: https://i.imgur.com/yMYJ2f2.png
 [jenkinspipe]: https://i.imgur.com/7u7GNeG.png
+[testing1]: https://i.imgur.com/heqy7wd.png
+[testing2]: https://i.imgur.com/znOw4qo.png
+[testing3]: https://i.imgur.com/KN3Rmlq.png
+[testing4]: https://i.imgur.com/IqIvbzl.png
+
