@@ -25,3 +25,13 @@ Risk Assessment: https://docs.google.com/spreadsheets/d/1kQLrGaM1gW0HIWIjLm2u13Q
 
 ## Brief
 ### Project Brief
+
+The simple brief of this project was to create an application with four discrete services, communicating on ports 5000:5003.
+The focus of the brief was on the deployment side. Agreed practices and tools as follows needed implementation in order to achieve a pass mark for the project:
+
+**Kanban Board: Trello**  \
+Trello was used as a Kanban board for this project. It allows for 'cards' containing user stories and the product backlog, in addition to basic risks and issues assessment. Cards can be colour coded to aggregate their importance by story points or to demarcate the position of the task in the MOSCOW prioritisation.
+
+![trello][trello]
+
+[trello]: https://i.imgur.com/sSPOug4.png
