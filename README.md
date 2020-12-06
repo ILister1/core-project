@@ -18,6 +18,7 @@ Risk Assessment: https://docs.google.com/spreadsheets/d/1kQLrGaM1gW0HIWIjLm2u13Q
 * [CI Pipeline](#ci-pipeline)
 * [Back End](#back-end)
 * [Front End](#front-end)
+* [Deployment Log](#deployment-log)
 * [Known Issues](#known-issues)
 * [Future Improvements](#future-improvements)
 * [Unit Testing](#unit-testing)
@@ -78,9 +79,56 @@ Here is a screenshot of the risk assessment performed before work on the project
 
 ## CI Pipeline
 
+Here is my CI Pipeline for this project:
+
+
+
 ## Back End
 
 ## Front End
+
+## Deployment Log
+
+**02/12/2020**  \
+
+where n = service number:
+
+Wrote a Dockerfile to build image for service (n).
+wrote build_service(n).sh to execute build commands
+wrote teardown_service(n).sh to execute teardown if image requires.
+Added Gunicorn entrypoint to service (n).
+
+**03/12/2020**  \
+Successfully got all four service containers running on a network with Docker.
+Application is functional.
+Moved on to Docker Compose.
+
+Successfully built all containers and images on Docker Compose.
+Created systemd service configuration file to obscure environment variables
+These can be called from docker-compose.yaml
+Did not work - Docker Compose cannot read exported variables as sudo.
+DB_URI and SECRET_KEY presently exposed.
+
+
+**04/12/2020**  \
+Moved on to Docker Swarm.
+
+Initialised swarm.
+Added 2 replicas to each service (makes it more likely the app stays up during an update) before deploying stack.
+Stack deployed.
+
+Moved on to Jenkinsfile.
+Wrote Jenkinsfile with Test, Build, Push and Deploy scripts called in the pipeline.
+Encountered issue of not having set up database-in-memory to Test.
+
+**05/12/2020**  \
+
+Created Ansible playbook and Docker/Swarm roles.
+Added an Ansible configuration stage to be performed prior to testing in the pipeline.
+
+Jenkins uses the pipeline script Jenkinsfile to successfully deploy the project, will SSH into Swarm-manager and git pull to get latest version before deploying stack.
+Added GitSCM webhook to Jenkins and configured in GitHub.
+Set up development branch 'dev-branch' using Git to implement the second implementation of the project.
 
 ## Known Issues
 
