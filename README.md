@@ -91,6 +91,8 @@ Here is a screenshot of the risk assessment performed before work on the project
 
 Here is my CI Pipeline for this project:
 
+![cipipe][cipipe]
+
 
 
 ## Back End
@@ -157,3 +159,4 @@ Isaac Lister
 [risk]: https://i.imgur.com/UUHwLmm.png
 [initial]: https://i.imgur.com/AUspyjS.png
 [final]: https://i.imgur.com/DI3MXDv.png
+[cipipe]: https://i.imgur.com/Tt95F2f.png
