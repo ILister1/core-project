@@ -97,6 +97,10 @@ The only part of my pipeline that has not been explained is the Artifact Reposit
 
 ## Back End
 
+The back end of the project is driven by a Jenkins pipeline script. The Jenkinsfile itself executes shell(.sh) scripts from my project's 'scripts' directory to run Ansible, pytest, and use Docker to build the images, Docker Compose to push them to the dockerhub image repository, and Docker Swarm to deploy a Docker Stack.
+
+![jenkinspipe][jenkinspipe]
+
 ## Front End
 
 Here is a front-end view of my application. It is a simple pythonic HTML based web application, which generates new data every time the web page is refreshed and another HTTP request is made. As the focus of this project is the deployment side, the application side is simple, and so is its front-end GUI:
@@ -148,7 +152,16 @@ Set up development branch 'dev-branch' using Git to implement the second impleme
 
 ## Known Issues
 
+The main known issue with this project is that the DATABASE_URI and SECRET_KEY are exposed in the docker-compose.yaml. This is incredibly bad practice and the only reason it persists in this project is that I am unsure how to persist environment variables in Jenkins- I have put both DATABASE_URI and SECRET_KEY into the Environment Variables section of Manage Jenkins->Configure System, but if docker-compose.yaml contains DATABASE_URI: DATABASE_URI (instead of the actual URI) etc, then the pipeline script fails to execute, even with the environment variables exported in Jenkins. This is unacceptable, and needs fixing.
+
+The application sometimes goes down briefly during a rolling update. Or, at least, throws a 500 Internal Server Error. It is often fixed by the next refresh. Initially I was SSHing into my NGINX machine to take down and re-deploy the NGINX container. Removing this aspect of the deploy script hasn't solved the problem, so I must need more replicas declared in docker-compose.yaml, as replicas allow the application to remain in its current state whilst changes are made in the back end.
+
 ## Future Improvements
+
+Obscure URI in docker-compose.yaml, make application secure  \
+Increase number of replicas such that the application always stays live.  \
+Implement login functionality and the capacity to save stories to the database exclusive to a user account.  \
+Implement a form such that the user can suggest themes and settings which can be computationally processed into stories.  \
 
 ## Unit Testing
 
@@ -165,3 +178,4 @@ Isaac Lister
 [final]: https://i.imgur.com/DI3MXDv.png
 [cipipe]: https://i.imgur.com/Tt95F2f.png
 [frontend]: https://i.imgur.com/yMYJ2f2.png
+[jenkinspipe]: https://i.imgur.com/7u7GNeG.png
