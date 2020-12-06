@@ -77,6 +77,10 @@ Initially, I imagined the architecture of the project to simply be four containe
 
 ![initial][initial]
 
+Ultimately, I realised that this diagram does not instruct the presence of the NGINX reverse proxy on its own machine, running in a container outside the Ansible configured Docker Swarm, so the final diagram reflects this:
+
+![final][final]
+
 ## Risk Assessment
 
 Here is a screenshot of the risk assessment performed before work on the project began. It can be seen in full at the link provided in the Resources section, and has been revisited at a later date to report on what mitigation has been taken to the intolerable risks to the project. Not all mitigation was possible, as it would require development of the application beyond the scope of this brief, but most risks have been mitigated.
@@ -152,3 +156,4 @@ Isaac Lister
 [erd]: https://i.imgur.com/Jo2H4Qy.png
 [risk]: https://i.imgur.com/UUHwLmm.png
 [initial]: https://i.imgur.com/AUspyjS.png
+[final]: https://i.imgur.com/DI3MXDv.png
