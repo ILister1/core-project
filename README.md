@@ -11,17 +11,17 @@ Risk Assessment: https://docs.google.com/spreadsheets/d/1kQLrGaM1gW0HIWIjLm2u13Q
 ## Contents
 
 * Brief
-    * [Project Brief] (#project-brief)
+    * [Project Brief](#project-brief)
 * Designs
-    * [Basic Designs] (#basic-designs)
-* [Risk Assessment] (#risk-assessment)
-* [CI Pipeline] (#ci-pipeline)
-* [Back End] (#back-end)
-* [Front End] (#front-end)
-* [Known Issues] (#known-issues)
-* [Future Improvements] (#future-improvements)
-* [Unit Testing] (#unit-testing)
-* [Branching] (#branching)
+    * [Basic Designs](#basic-designs)
+* [Risk Assessment](#risk-assessment)
+* [CI Pipeline](#ci-pipeline)
+* [Back End](#back-end)
+* [Front End](#front-end)
+* [Known Issues](#known-issues)
+* [Future Improvements](#future-improvements)
+* [Unit Testing](#unit-testing)
+* [Branching](#branching)
 
 ## Brief
 ### Project Brief
