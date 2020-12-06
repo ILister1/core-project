@@ -44,8 +44,9 @@ def scene():
         #story = "If you could choose the way you go, you'd probably choose this."
     #else:
        #story = "You shouldn't have trusted him the first time."
+
     
     return jsonify({"data":story})
 
 if __name__=="__main__":
-    app.run(debug=True, host='0.0.0.0', port=5003)       
+    app.run(debug=True, host='0.0.0.0', port=5003)     

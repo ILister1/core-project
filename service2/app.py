@@ -8,7 +8,8 @@ def theme():
 
     themes = ["Fortune found in", "Fears faced in", "Chance encounter in"]
     return  Response(random.choice(themes), mimetype="text/plain")
-        
+
+    
     #themes = ["Love found in", "Desire sensed in", "Death experienced in"]
     #return  Response(random.choice(themes), mimetype="text/plain")
 
