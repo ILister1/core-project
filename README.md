@@ -189,7 +189,7 @@ Isaac Lister
 ## Versioning
 v1.0
 
-## Acknowledgements
+## Acknowledgments
 Thanks to Ben and all at QA for helping me get through this project.
 
 [trello]: https://i.imgur.com/sSPOug4.png
