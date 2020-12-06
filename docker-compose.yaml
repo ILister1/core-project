@@ -10,26 +10,26 @@ services:
     - target: 5000
       published: 5000
     deploy:
-      replicas: 4
+      replicas: 2
   service2:
     image: isaaclister/core-project2
     build: ./service2
     ports:
     - target: 5001
     deploy:
-      replicas: 4
+      replicas: 2
   service3:
     image: isaaclister/core-project3
     build: ./service3
     ports:
     - target: 5002
     deploy:
-      replicas: 4
+      replicas: 2
   service4:
     image: isaaclister/core-project4
     build: ./service4
     ports:
     - target: 5003
     deploy:
-      replicas: 4
+      replicas: 2
     

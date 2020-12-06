@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker-compose push
+docker-compose push
