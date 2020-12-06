@@ -26,6 +26,24 @@ def scene():
         story = "I haven't seen you since I exculpated that bull."
     else:
         story = "The luckiest dreams are the ones you have in the daytime."
+    #if combine == "Love found in an empty room":
+        #story = "If you can't love yourself, how're you gonna love somebody else?"
+    #elif combine == "Love found in a perfect place":
+        #story = "Romance is only as perfect as the moment it exists in"
+    #elif combine == "Love found in a second chance":
+        #story = "Everybody makes mistakes. Not usually as many as you do."
+    #elif combine == "Desire sensed in an empty room":
+        #story = "Loneliness is sometimes a panacea."
+    #elif combine == "Desire sensed in a perfect place":
+        #story = "You want only the best all of the time"
+    #elif combine == "Desire sensed in a second chance":
+        #story = "I hope I get through the next assessment."
+    #elif combine == "Death experienced in an empty room":
+        #story = "Everybody dies alone."
+    #elif combine == "Death experienced in a perfect place":
+        #story = "If you could choose the way you go, you'd probably choose this."
+    #else:
+       #story = "You shouldn't have trusted him the first time."
     
     return jsonify({"data":story})
 
