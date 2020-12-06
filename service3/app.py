@@ -8,9 +8,6 @@ def setting():
 
     settings = ["a mysterious cavern", "an intimidating room", "a dreamlike headspace"]
     return  Response(random.choice(settings), mimetype="text/plain")
-
-   # settings = ["an empty room", "a perfect place", "a second chance"]
-   # return  Response(random.choice(settings), mimetype="text/plain")
         
     #settings = ["an empty room", "a perfect place", "a second chance"]
     #return  Response(random.choice(settings), mimetype="text/plain")
