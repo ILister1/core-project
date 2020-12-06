@@ -89,7 +89,7 @@ Here is my CI Pipeline for this project:
 
 ## Deployment Log
 
-**02/12/2020**  \
+**02/12/2020**  
 
 where n = service number:
 
@@ -98,7 +98,7 @@ wrote build_service(n).sh to execute build commands
 wrote teardown_service(n).sh to execute teardown if image requires.
 Added Gunicorn entrypoint to service (n).
 
-**03/12/2020**  \
+**03/12/2020**  
 Successfully got all four service containers running on a network with Docker.
 Application is functional.
 Moved on to Docker Compose.
@@ -110,7 +110,7 @@ Did not work - Docker Compose cannot read exported variables as sudo.
 DB_URI and SECRET_KEY presently exposed.
 
 
-**04/12/2020**  \
+**04/12/2020**  
 Moved on to Docker Swarm.
 
 Initialised swarm.
@@ -121,7 +121,7 @@ Moved on to Jenkinsfile.
 Wrote Jenkinsfile with Test, Build, Push and Deploy scripts called in the pipeline.
 Encountered issue of not having set up database-in-memory to Test.
 
-**05/12/2020**  \
+**05/12/2020**  
 
 Created Ansible playbook and Docker/Swarm roles.
 Added an Ansible configuration stage to be performed prior to testing in the pipeline.
