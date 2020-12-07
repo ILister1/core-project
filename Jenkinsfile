@@ -8,12 +8,6 @@ pipeline {
                 sh ". ./scripts/run_playbook.sh"
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-                sh ". ./scripts/test.sh"
-            }
-        }
         stage('Build') {
             steps {
                 echo 'Building..'
